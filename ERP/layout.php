@@ -25,9 +25,9 @@
 
         /* Header/logo Title */
         .header {
-            padding: 80px;
+            padding: 01px;
             text-align: center;
-            background: #1abc9c;
+            background: green;
             color: white;
         }
 
@@ -47,6 +47,23 @@
         }
 
         /* Style the navigation bar links */
+
+        .navbar span {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            text-decoration: none;
+        }
+        .navbar p {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            text-decoration: none;
+        }
         .navbar a {
             float: left;
             display: block;
@@ -57,15 +74,19 @@
         }
 
 
+
         /* Right-aligned link */
         .navbar a.right {
+            float: right;
+        }
+        .navbar p.right {
             float: right;
         }
 
         /* Change color on hover */
         .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+          
+            color: red;
         }
 
         /* Active/current link */
@@ -86,22 +107,36 @@
 
         /* Create two unequal columns that sits next to each other */
         /* Sidebar/left column */
-        .side {
+        .leftbox {
             -ms-flex: 30%;
             /* IE10 */
             flex: 30%;
             background-color: #f1f1f1;
-            padding: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
-        /* Main column */
-        .main {
+        /* rightbox column */
+        .rightbox {
             -ms-flex: 70%;
             /* IE10 */
             flex: 70%;
             background-color: white;
-            padding: 20px;
+          
+            padding-left: 5px;
+            padding-right: 5px;
         }
+
+        .fullbox {
+            -ms-flex: 70%;
+            /* IE10 */
+            flex: 70%;
+            background-color: white;
+          
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
 
         /* Fake image, just for this example */
         .fakeimg {
@@ -114,7 +149,7 @@
         .footer {
             padding: 20px;
             text-align: center;
-            background: #ddd;
+            background: green;
         }
 
         /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -207,12 +242,15 @@
         </div>
 
         <div class="navbar noprint">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-            <a href="#" class="active">Home</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+             
+           
+            <span class="active" style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776; Menu</span>
+            
 
-            <a href="#" class="right">Link</a>
+          
+
+            <a href="#" class="right">Logout</a>
+            <p class="right">Email</p>
 
         </div>
 
@@ -221,7 +259,9 @@
 
         
         <div class="row">
-            <div class="side">
+
+
+            <div class="leftbox">
                 <h2>About Me</h2>
                 <h5>Photo of me:</h5>
                 <div class="fakeimg" style="height:200px;">Image</div>
@@ -236,7 +276,7 @@
 
 
 
-            <div class="main">
+            <div class="rightbox">
                 <h2>TITLE HEADING</h2>
                 <h5>Title description, Dec 7, 2017</h5>
                 <div class="fakeimg" style="height:200px;">Image</div>
@@ -251,9 +291,27 @@
                 <p>Some text..</p>
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
+                    exercitation ullamco.</p>    
 
-               
+            </div>
+
+
+            <div class="fullbox">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+                <br>
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>    
 
             </div>
 
